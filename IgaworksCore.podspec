@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "IgaworksCore"
-s.version      = "1.0.0"
+s.version      = "1.0"
 s.summary      = "IgaworksCore.framework"
 s.homepage     = "https://github.com/IGAWorksDev/IgaworksCore-iOS"
 
