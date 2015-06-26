@@ -19,8 +19,7 @@ s.platform = :ios, '6.0'
 s.author       = { "wonje,song" => "ricky@igaworks.com" }
 s.source       = { :git => "https://github.com/igaworks/IgaworksCore-iOS.git", :tag => "#{s.version}" }
 s.resources = "SDKResources.bundle"
-s.ios.vendored_frameworks = 'IgaworksAD.framework'
-s.frameworks = 'UIKit'
+s.ios.vendored_frameworks = 'IgaworksCore.framework'
 s.libraries = 'xml2'
 s.xcconfig     = { 'HEADER_SEARCH_PATHS' => '"$(SDKROOT)/usr/include/libxml2"' }
 end
