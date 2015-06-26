@@ -16,8 +16,8 @@ LICENSE
 }
 
 s.platform = :ios, '6.0'
-s.author       = { "wonje,song" => "wonje@igaworks.com" }
-s.source       = { :git => "https://github.com/igaworks/IgaworksAD-iOS.git", :tag => "#{s.version}" }
+s.author       = { "wonje,song" => "ricky@igaworks.com" }
+s.source       = { :git => "https://github.com/igaworks/IgaworksCore-iOS.git", :tag => "#{s.version}" }
 s.resources = "SDKResources.bundle"
 s.ios.vendored_frameworks = 'IgaworksAD.framework'
 s.frameworks = 'UIKit'
