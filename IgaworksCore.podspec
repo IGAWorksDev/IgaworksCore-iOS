@@ -19,6 +19,6 @@ s.platform = :ios, '6.0'
 s.author       = { "wonje,song" => "ricky@igaworks.com" }
 s.source       = { :git => "https://github.com/IGAWorksDev/IgaworksCore-iOS.git", :tag => "#{s.version}" }
 s.ios.vendored_frameworks = 'IgaworksCore.framework'
-s.libraries = 'xml2'
+s.libraries = 'xml2', 'iAd', 'CoreTelephony'
 s.xcconfig     = { 'HEADER_SEARCH_PATHS' => '"$(SDKROOT)/usr/include/libxml2"' }
 end
