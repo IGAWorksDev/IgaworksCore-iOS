@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "IgaworksCore"
-s.version      = "2.0.4"
+s.version      = "2.0.5"
 s.summary      = "IgaworksCore.framework"
 s.homepage     = "https://github.com/IGAWorksDev/IgaworksCore-iOS"
 
@@ -19,7 +19,7 @@ s.platform = :ios, '6.0'
 s.author       = { "wonje,song" => "ricky@igaworks.com" }
 s.source       = { :git => "https://github.com/IGAWorksDev/IgaworksCore-iOS.git", :tag => "#{s.version}" }
 s.ios.vendored_frameworks = 'IgaworksCore.framework'
-s.frameworks = 'iAd', 'CoreTelephony', 'SystemConfiguration'
+s.frameworks = 'iAd', 'CoreTelephony', 'SystemConfiguration', 'UIKit', 'Security', 'CoreGraphics', 'CoreText'
 s.libraries = 'xml2'
 s.xcconfig     = { 'HEADER_SEARCH_PATHS' => '"$(SDKROOT)/usr/include/libxml2"' }
 end
