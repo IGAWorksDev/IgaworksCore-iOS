@@ -39,6 +39,8 @@ typedef enum _IgaworksCoreLogLevel
 
 @property (nonatomic, unsafe_unretained) id<IgaworksCoreDelegate> delegate;
 
+// igaworks에서 제공하는 reward server를 사용할것인지 여부.
+@property (nonatomic, unsafe_unretained) BOOL useIgaworksRewardServer;
 
 
 /*!
@@ -52,10 +54,20 @@ typedef enum _IgaworksCoreLogLevel
  @param hashkey             app. 등록 후 발급된 키.
  @param isUseIgaworksRewardServer    igaworks에서 제공하는 reward server를 사용할것인지 여부.
  */
-+ (void)igaworksCoreWithAppKey:(NSString *)appKey andHashKey:(NSString *)hashKey andIsUseIgaworksRewardServer:(BOOL)isUseIgaworksRewardServer;
++ (void)igaworksCoreWithAppKey:(NSString *)appKey andHashKey:(NSString *)hashKey andIsUseIgaworksRewardServer:(BOOL)isUseIgaworksRewardServer NS_DEPRECATED_IOS(2.0, 2.0.5, "Use -igaworksCoreWithAppKey:andHashKey:");
 
 
-
+/*!
+ @abstract
+ 초기화. init한다. Singleton method
+ 
+ @discussion
+ 발급 받은 appkey로 connect한다.
+ 
+ @param appkey              app. 등록 후, IGAWorks로부터 발급된 키.
+ @param hashkey             app. 등록 후 발급된 키.
+ */
++ (void)igaworksCoreWithAppKey:(NSString *)appKey andHashKey:(NSString *)hashKey;
 
 
 
