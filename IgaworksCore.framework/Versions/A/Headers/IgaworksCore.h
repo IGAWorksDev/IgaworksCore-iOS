@@ -43,6 +43,7 @@ typedef enum _IgaworksCoreLogLevel
 @property (nonatomic, unsafe_unretained) BOOL useIgaworksRewardServer;
 
 
+
 /*!
  @abstract
  초기화. init한다. Singleton method
@@ -186,6 +187,17 @@ typedef enum _IgaworksCoreLogLevel
 @protocol IgaworksCoreDelegate <NSObject>
 
 @optional
+
+/*!
+ @abstract
+ conversion key, referral key를 전달한다.
+*/
 - (void)didSaveConversionKey:(NSInteger)conversionKey subReferralKey:(NSString *)subReferralKey;
+
+/*!
+ @abstract
+ deep link를 전달한다.
+ */
+- (void)didReceiveDeeplink:(NSString *)deepLink;
 
 @end
