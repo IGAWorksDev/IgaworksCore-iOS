@@ -55,9 +55,11 @@ typedef enum _IgaworksCoreLogLevel
  @param hashkey             app. 등록 후 발급된 키.
  @param isUseIgaworksRewardServer    igaworks에서 제공하는 reward server를 사용할것인지 여부.
  */
+
+
 + (void)igaworksCoreWithAppKey:(NSString *)appKey andHashKey:(NSString *)hashKey andIsUseIgaworksRewardServer:(BOOL)isUseIgaworksRewardServer NS_DEPRECATED_IOS(2.0, 2.0.5, "Use -igaworksCoreWithAppKey:andHashKey:");
-
-
+//HOIIL XCODE6
+//+ (void)igaworksCoreWithAppKey:(NSString *)appKey andHashKey:(NSString *)hashKey andIsUseIgaworksRewardServer:(BOOL)isUseIgaworksRewardServer;
 /*!
  @abstract
  초기화. init한다. Singleton method
