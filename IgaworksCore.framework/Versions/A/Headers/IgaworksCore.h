@@ -149,8 +149,8 @@ typedef enum _IgaworksCoreLogLevel
  */
 + (void)passOpenURL:(NSURL *)URL;
 
-
 + (void)setReferralUrl:(NSURL *)URL;
++ (void)setReferralUrlForFacebook:(NSURL *)URL;
 @end
 
 @protocol IgaworksADClientRewardDelegate <NSObject>
