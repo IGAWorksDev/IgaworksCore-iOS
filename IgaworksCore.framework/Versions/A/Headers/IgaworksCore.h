@@ -149,7 +149,7 @@ typedef enum _IgaworksCoreLogLevel
  */
 + (void)passOpenURL:(NSURL *)URL;
 
-+ (void)setReferralUrl:(NSURL *)URL;
++ (void)setReferralUrl:(NSURL *)URL __attribute__((deprecated("use -setReferralUrlForFacebook: instead")));
 + (void)setReferralUrlForFacebook:(NSURL *)URL;
 @end
 
