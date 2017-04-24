@@ -151,6 +151,7 @@ typedef enum _IgaworksCoreLogLevel
 
 + (void)setReferralUrl:(NSURL *)URL __attribute__((deprecated("use -setReferralUrlForFacebook: instead")));
 + (void)setReferralUrlForFacebook:(NSURL *)URL;
++ (void)makeIgaworksForceCrash;
 @end
 
 @protocol IgaworksADClientRewardDelegate <NSObject>
@@ -203,5 +204,6 @@ typedef enum _IgaworksCoreLogLevel
  deep link를 전달한다.
  */
 - (void)didReceiveDeeplink:(NSString *)deepLink;
+
 
 @end
