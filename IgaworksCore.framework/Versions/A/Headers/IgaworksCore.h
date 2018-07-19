@@ -72,6 +72,15 @@ typedef enum _IgaworksCoreLogLevel
 + (void)igaworksCoreWithAppKey:(NSString *)appKey andHashKey:(NSString *)hashKey;
 
 
+/*!
+ gdpr 적용
+ */
++ (void)gdprForgetMe;
+
+/*!
+ gdpr 적용여부
+ */
++ (BOOL)isGdprForgetMe;
 
 /*!
  @abstract
