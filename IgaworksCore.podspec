@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
 s.name         = "IgaworksCore"
-s.version      = "2.4.8"
+s.version      = "2.4.9"
 s.summary      = "IgaworksCore.framework"
 s.homepage     = "https://github.com/IGAWorksDev/IgaworksCore-iOS"
 
 s.license      = {
 :type => 'Commercial',
 :text => <<-LICENSE
-All text and design is copyright 2006-2015 igaworks, Inc.
+All text and design is copyright 2006-2019 igaworks, Inc.
 
 All rights reserved.
 
