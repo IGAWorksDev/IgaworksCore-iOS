@@ -7,7 +7,7 @@ s.homepage     = "https://github.com/IGAWorksDev/IgaworksCore-iOS"
 s.license      = {
 :type => 'Commercial',
 :text => <<-LICENSE
-All text and design is copyright 2006-2019 igaworks, Inc.
+All text and design is copyright 2006-2020 igaworks, Inc.
 
 All rights reserved.
 
